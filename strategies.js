@@ -1,6 +1,6 @@
 // sourced from: https://github.com/sansumbrella/Processing-ObliqueStrategies/blob/master/src/com/sansumbrella/StrategyList.java
 
-const strategies = [
+module.exports = [
   //From David
   "Turn it over.",
   "Switch the axes.",
