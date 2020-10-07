@@ -1,0 +1,11 @@
+{
+  "name": "oblique-strategies-js",
+  "version": "1.0.0",
+  "description": "a javascript project to present Brian Eno's Oblique Strategies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "knaut",
+  "license": "ISC"
+}
