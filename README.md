@@ -10,4 +10,4 @@ This project is my way of practicing vanilla JS skills while making use of the T
 
 ## Preview Image (WIP)
 
-![Display First Strategy](https://github.com/knaut/oblique-strategies-js/preview.jpeg)
+![Display First Strategy](https://github.com/knaut/oblique-strategies-js/blob/master/preview.jpeg)
