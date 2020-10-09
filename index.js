@@ -17,10 +17,16 @@ board.on('ready', function() {
     pins: ['b2', 'b3', 'b4', 'b5', 'b6', 'b7']
   })
 
-  var randomIndex = pickRandom()
+  var button = new five.Button('a3')
 
-  lcd.cursor(0, 0).print(
-    strategies[ randomIndex ]
-  )
+  button.on('release', function() {
+    
+    var randomIndex = pickRandom()
+
+    lcd.cursor(0, 0).print(
+      strategies[ randomIndex ]
+    )
+    
+  })
 
 })
