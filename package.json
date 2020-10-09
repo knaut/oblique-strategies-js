@@ -1,12 +1,15 @@
 {
-  "name": "oblique-strategies-js",
-  "version": "1.0.0",
-  "description": "a javascript project to present Brian Eno's Oblique Strategies",
+  "name": "oblique-strategies",
+  "version": "0.0.0",
+  "description": "Tessel project",
   "main": "index.js",
   "scripts": {
-    "start": "node cli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "knaut",
-  "license": "ISC"
+  "repository": "https://github.com/knaut/oblique-strategies-js.git",
+  "keywords": [
+    "Tessel"
+  ],
+  "license": "MIT",
+  "readme": "A bare bones Tessel 2 blinky script."
 }
