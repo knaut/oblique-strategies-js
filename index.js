@@ -44,9 +44,9 @@ function formatStrategy(strategy) {
     }
   }
 
-  if (firstRowArray.length < lcdLimit) {
-
-  }
+  // if (firstRowArray.length < lcdLimit) {
+  //   // TODO: replace empty chars with spaces
+  // }
 
   var firstRowString = firstRowArray.join('')
   var secondRowString = secondRowArray.join('')
@@ -69,6 +69,9 @@ board.on('ready', function() {
   button.on('release', function() {
     // the lcd monitor needs to be cleared before the next
     // display, otherwise the prior text gets "stuck".
+    
+    // this method might be buggy
+    // TODO: replace empty chars with spaces
     lcd.clear()
     
     var randomStrategy = pickRandomStrategy()
