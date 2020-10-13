@@ -31,7 +31,7 @@ board.on('ready', function() {
     
     // this method might be buggy
     // TODO: replace empty chars with spaces
-    lcd.clear()
+    // lcd.clear()
     
     var randIndex = pickRandomIndex( strategies )
     var randomStrategy = pickRandomStrategy( strategies, randIndex )
