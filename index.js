@@ -1,11 +1,14 @@
+// MODULES
 var five = require('johnny-five')
 var tessel = require('tessel-io')
+
+// DATA
 var strategies = require('./strategies.js')
 
+// UTILS
+var pickRandomIndex = require('./src/pickRandomIndex')
 var pickRandomStrategy = require('./src/pickRandomStrategy')
-var formatStrategy = require('./src/randomStrategy')
-
-
+var formatStrategy = require('./src/formatStrategy')
 
 
 var board = new five.Board({
@@ -30,8 +33,9 @@ board.on('ready', function() {
     // TODO: replace empty chars with spaces
     lcd.clear()
     
-    var randomStrategy = pickRandomStrategy()
-    var strategyObject = formatStrategy( randomStrategy )
+    var randIndex = pickRandomIndex( strategies )
+    var randomStrategy = pickRandomStrategy( strategies, randIndex )
+    var strategyObject = formatStrategy( randomStrategy, lcdLimit )
 
     // debug
     // console.log(strategyObject)

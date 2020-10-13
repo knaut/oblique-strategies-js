@@ -1,7 +1,4 @@
-var pickRandomIndex = require('./pickRandomIndex')
-
-module.exports = function pickRandomStrategy() {
-  var randomIndex = pickRandomIndex()
+module.exports = function pickRandomStrategy(strategies, randomIndex) {
   var strategy = strategies[ randomIndex ]
   return strategy
 }

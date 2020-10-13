@@ -1,4 +1,4 @@
-module.exports = function formatStrategy(strategy) {
+module.exports = function formatStrategy(strategy, lcdLimit) {
   // the LCD monitor only has 16 places per row.
   // split the strategy so it's not truncated if it's too long.
 
